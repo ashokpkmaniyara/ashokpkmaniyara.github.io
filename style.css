@@ -75,3 +75,7 @@ nav a:hover { color: var(--accent); }
 .contact { text-align: center; }
 .contact .cta { justify-content: center; }
 footer { padding: 24px 16px 40px; text-align: center; color: var(--muted); font-size: .9rem; }
+
+a.card.link { display: block; border-color: var(--accent); }
+a.card.link:hover { background: var(--accent-soft); }
+.card .tags { margin-top: 12px; }
