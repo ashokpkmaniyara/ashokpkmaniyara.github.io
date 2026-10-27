@@ -1,155 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Kelly Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashok PK | Odoo Developer</title>
+  <meta name="description" content="Ashok PK is an Odoo Developer with 3+ years of experience in Odoo v13–v18: migrations, custom modules, API integrations and asynchronous processing.">
+  <meta property="og:title" content="Ashok PK | Odoo Developer">
+  <meta property="og:description" content="Odoo v13–v18 · Python · PostgreSQL · REST/JSON-RPC · Queue Job · RabbitMQ">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23714b67'/><text x='50' y='66' font-size='52' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>AP</text></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Kelly</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">ashok<span>.pk</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Highlights</a>
+        <a href="#contact">Contact</a>
       </nav>
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
+      <button id="theme" aria-label="Toggle theme">◐</button>
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Kelly Adams</h2>
-            <p>I'm a professional illustrator from San Francisco</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
-          </div>
-        </div>
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Odoo Developer · Kerala, India</p>
+      <h1>Hi, I'm <em>Ashok PK</em>.<br>I build and migrate Odoo ERP systems.</h1>
+      <p class="lead">3+ years across Odoo v13–v18: custom modules, full-system migrations, third-party integrations and asynchronous processing, delivered 100% on time.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="https://github.com/ashokpkmaniyara" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="Ashok_PK_CV.pdf" download>Download CV</a>
       </div>
+      <ul class="stats">
+        <li><b>3+</b><span>Years with Odoo</span></li>
+        <li><b>v13–v18</b><span>Versions worked on</span></li>
+        <li><b>100%</b><span>On-time delivery</span></li>
+      </ul>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <section id="about" class="wrap">
+      <h2>About</h2>
+      <p>I'm an Odoo Developer at Cybrosys Technologies, skilled in Python, the Odoo ORM and PostgreSQL. I lead Odoo migrations, build custom modules, and integrate services such as payment gateways through REST and JSON-RPC APIs. For long-running work I use Queue Job and RabbitMQ so the core ERP stays responsive.</p>
+      <p>I work closely with functional consultants, clients, QA and deployment teams to turn requirements into reliable releases.</p>
+    </section>
 
+    <section id="skills" class="wrap">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Odoo &amp; ERP</h3><p class="tags"><span>Odoo v13–v18</span><span>Module Development</span><span>Customization</span><span>Odoo Studio</span><span>ERP Implementation</span><span>Workflow Automation</span></p></div>
+        <div class="card"><h3>Languages</h3><p class="tags"><span>Python</span><span>Odoo ORM</span><span>XML</span><span>JSON</span><span>HTML</span><span>CSS</span></p></div>
+        <div class="card"><h3>Databases</h3><p class="tags"><span>PostgreSQL</span><span>SQL</span></p></div>
+        <div class="card"><h3>Integration</h3><p class="tags"><span>REST API</span><span>JSON-RPC</span><span>XML-RPC</span><span>Queue Job</span><span>RabbitMQ</span></p></div>
+        <div class="card"><h3>Server &amp; DevOps</h3><p class="tags"><span>Odoo.sh</span><span>Linux (Ubuntu)</span><span>Docker</span><span>Git</span><span>Deployment</span><span>Backups</span><span>Performance Optimization</span></p></div>
+        <div class="card"><h3>Functional Modules</h3><p class="tags"><span>Sales</span><span>CRM</span><span>Inventory</span><span>Purchase</span><span>Accounting</span><span>Manufacturing</span><span>HR</span><span>Point of Sale</span><span>Website</span></p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-head">
+          <h3>Odoo Developer <span>· Cybrosys Technologies</span></h3>
+          <p class="meta">Kozhikode, Kerala, India · June 2023 – Present</p>
+        </div>
+        <ul>
+          <li>Led an end-to-end Odoo migration for a US-based client, upgrading the full ERP from v13 to v18 across Sales, CRM, Inventory, Purchase, Accounting, Manufacturing and HR.</li>
+          <li>Integrated the MultiSafepay payment gateway into Odoo for secure online transactions and a more reliable checkout.</li>
+          <li>Directed a Product Details data migration from Odoo 13 to 18, preserving data integrity and building a custom backend theme module.</li>
+          <li>Customized Sales, Purchase, Website and Point of Sale modules and built custom PDF and XLSX reports.</li>
+          <li>Wrote scalable Python/Odoo ORM code and optimized database queries for speed and efficiency.</li>
+          <li>Implemented asynchronous processing with Queue Job and RabbitMQ for high-volume background tasks.</li>
+          <li>Connected external systems and third-party services via REST and JSON-RPC APIs.</li>
+          <li>Developed custom modules and ERP features in Odoo Studio, tailored to client needs.</li>
+          <li>Worked with consultants and clients on requirements, and with QA and deployment teams using Git, Docker and Odoo.sh.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="wrap">
+      <h2>Highlights</h2>
+      <div class="grid">
+        <div class="card"><h3>Odoo 13 → 18 Migration</h3><p>Full ERP upgrade for a US-based client, modernizing data structures and improving stability across six core apps.</p></div>
+        <div class="card"><h3>Payment Gateway Integration</h3><p>MultiSafepay integration for secure online payments and dependable e-commerce checkout.</p></div>
+        <div class="card"><h3>Async Processing</h3><p>Queue Job + RabbitMQ pipelines that keep heavy background work from blocking the ERP.</p></div>
+        <div class="card"><h3>Custom Backend Theme &amp; Reports</h3><p>A backend theme module for better navigation, plus custom PDF and XLSX reports.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap two">
+      <div>
+        <h2>Education</h2>
+        <p><b>B.Tech, Computer Science &amp; Engineering</b><br>College of Engineering Trikaripur, Kasaragod, Kerala<br><span class="meta">July 2022</span></p>
+      </div>
+      <div>
+        <h2>Languages</h2>
+        <p>English: Professional proficiency<br>Malayalam: Native / bilingual</p>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2>Contact</h2>
+      <p>Open to Odoo development, migration and integration work.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:ashokpkmaniyara@gmail.com">ashokpkmaniyara@gmail.com</a>
+        <a class="btn" href="tel:+919947959121">+91 99479 59121</a>
+        <a class="btn" href="https://github.com/ashokpkmaniyara" target="_blank" rel="noopener">github.com/ashokpkmaniyara</a>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="footer light-background">
+  <footer class="wrap"><p>© <span id="y"></span> Ashok PK · Payyanur, Kerala, India</p></footer>
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement, btn = document.getElementById('theme');
+    try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+    btn.addEventListener('click', () => {
+      const dark = root.dataset.theme ? root.dataset.theme === 'dark'
+        : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    });
+  </script>
 </body>
-
 </html>
