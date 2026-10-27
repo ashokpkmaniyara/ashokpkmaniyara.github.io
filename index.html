@@ -9,13 +9,16 @@
   <meta property="og:description" content="Odoo v13–v18 · Python · PostgreSQL · REST/JSON-RPC · Queue Job · RabbitMQ">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23714b67'/><text x='50' y='66' font-size='52' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>AP</text></svg>">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="progress" aria-hidden="true"></div>
   <header class="nav">
     <div class="wrap nav-inner">
       <a href="#top" class="logo">ashok<span>.pk</span></a>
-      <nav>
+      <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="links">☰</button>
+      <nav id="links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
@@ -29,6 +32,7 @@
   <main id="top">
     <section class="hero wrap">
       <p class="eyebrow">Odoo Developer · Kerala, India</p>
+      <p class="typing" aria-label="Migrations, custom modules, integrations">I do <span id="typed">Odoo migrations</span><i class="caret"></i></p>
       <h1>Hi, I'm <em>Ashok PK</em>.<br>I build and migrate Odoo ERP systems.</h1>
       <p class="lead">3+ years across Odoo v13–v18: custom modules, full-system migrations, third-party integrations and asynchronous processing, delivered 100% on time.</p>
       <div class="cta">
@@ -37,19 +41,19 @@
         <a class="btn" href="Ashok_PK_CV.pdf" download>Download CV</a>
       </div>
       <ul class="stats">
-        <li><b>3+</b><span>Years with Odoo</span></li>
+        <li><b data-count="3" data-suffix="+">3+</b><span>Years with Odoo</span></li>
         <li><b>v13–v18</b><span>Versions worked on</span></li>
-        <li><b>100%</b><span>On-time delivery</span></li>
+        <li><b data-count="100" data-suffix="%">100%</b><span>On-time delivery</span></li>
       </ul>
     </section>
 
-    <section id="about" class="wrap">
+    <section id="about" class="wrap" data-reveal>
       <h2>About</h2>
       <p>I'm an Odoo Developer at Cybrosys Technologies, skilled in Python, the Odoo ORM and PostgreSQL. I lead Odoo migrations, build custom modules, and integrate services such as payment gateways through REST and JSON-RPC APIs. For long-running work I use Queue Job and RabbitMQ so the core ERP stays responsive.</p>
       <p>I work closely with functional consultants, clients, QA and deployment teams to turn requirements into reliable releases.</p>
     </section>
 
-    <section id="skills" class="wrap">
+    <section id="skills" class="wrap" data-reveal>
       <h2>Skills</h2>
       <div class="grid">
         <div class="card"><h3>Odoo &amp; ERP</h3><p class="tags"><span>Odoo v13–v18</span><span>Module Development</span><span>Customization</span><span>Odoo Studio</span><span>ERP Implementation</span><span>Workflow Automation</span></p></div>
@@ -61,7 +65,7 @@
       </div>
     </section>
 
-    <section id="experience" class="wrap">
+    <section id="experience" class="wrap" data-reveal>
       <h2>Experience</h2>
       <div class="job">
         <div class="job-head">
@@ -82,7 +86,7 @@
       </div>
     </section>
 
-    <section id="projects" class="wrap">
+    <section id="projects" class="wrap" data-reveal>
       <h2>Projects</h2>
       <div class="grid">
         <div class="card"><h3>Odoo 13 → 18 Migration</h3><p>Full ERP upgrade for a US-based client, modernizing data structures and improving stability across Sales, CRM, Inventory, Purchase, Accounting, Manufacturing and HR.</p><p class="tags"><span>Migration</span><span>Python</span><span>PostgreSQL</span></p></div>
@@ -94,7 +98,7 @@
       </div>
     </section>
 
-    <section class="wrap two">
+    <section class="wrap two" data-reveal>
       <div>
         <h2>Education</h2>
         <p><b>B.Tech, Computer Science &amp; Engineering</b><br>College of Engineering Trikaripur, Kasaragod, Kerala<br><span class="meta">July 2022</span></p>
@@ -105,7 +109,7 @@
       </div>
     </section>
 
-    <section id="contact" class="wrap contact">
+    <section id="contact" class="wrap contact" data-reveal>
       <h2>Contact</h2>
       <p>Open to Odoo development, migration and integration work.</p>
       <div class="cta">
@@ -116,18 +120,10 @@
     </section>
   </main>
 
+  <button id="top-btn" aria-label="Back to top">↑</button>
+
   <footer class="wrap"><p>© <span id="y"></span> Ashok PK · Payyanur, Kerala, India</p></footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const root = document.documentElement, btn = document.getElementById('theme');
-    try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
-    btn.addEventListener('click', () => {
-      const dark = root.dataset.theme ? root.dataset.theme === 'dark'
-        : matchMedia('(prefers-color-scheme: dark)').matches;
-      root.dataset.theme = dark ? 'light' : 'dark';
-      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
